@@ -1,0 +1,406 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page { 
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.awards__title,
+.articles__title,
+.about__title,
+.chats__title,
+.page-header__logo {
+  font-family: 'Prata', serif;
+  font-weight: 400;
+}
+
+.page-header__nav-item,
+.awards__copy,
+.articles__copy,
+.about__copy,
+.chats__copy {
+  color: #adadad;
+}
+
+.button {
+  background-color: #fbe850;
+  color: #000;
+  padding: 12px 22px;
+}
+
+.button:visited {
+  color: #000;
+}
+
+.button:hover {
+  background-color: #fcef82
+}
+
+.button--inline-block {
+  display: inline-block;
+}
+
+/* Page header */
+.page-header {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+}
+
+.page-header__logo {
+  font-size: 1.2rem;
+}
+
+.page-header__hamburger-icon {
+  display: none;
+}
+
+.page-header__nav {
+  align-items: center;
+  display: flex;
+  flex: 2;
+}
+
+.page-header__nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.page-header__nav-item:first-child,
+.page-header__nav-item:last-child {
+  margin-left: auto;
+}
+
+/* Main */
+.page-main {
+  flex: 1;
+}
+
+.awards,
+.articles,
+.about,
+.chats {
+  padding: 60px 50px;
+}
+
+/* Main - Awards section */
+.awards {
+  background-color: #000;
+}
+
+.awards__title {
+  font-size: 3.5rem;
+  max-width: 750px;
+}
+
+.awards__copy {
+  margin-top: 15px;
+  max-width: 650px;
+}
+
+.awards__graphics {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.awards__logo  {
+  display: flex;
+  flex-basis: calc((100% / 6) - 25px);
+}
+
+.awards__logo:not(:last-child)  {
+  margin-right: 5px;
+}
+
+.awards__logo:last-child  {
+  justify-content: flex-end
+}
+
+/* Main - Articles section */
+.articles {
+  background-color: #000;
+  display: flex;
+  
+}
+
+.articles__item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.articles__item:first-child {
+  margin-right: 50px;
+}
+
+.articles__title {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.articles__copy {
+  margin-top: 15px;
+}
+
+/* Main - About section */
+.about {
+  background-color: #2e3038;
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about__copy:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+/* Main - Chats section */
+.chats {
+  background-color: #000;
+}
+
+.chats__item {
+  max-width: 554px;
+}
+
+.chats__title {
+  font-size: 2rem;
+}
+
+.chats__copy {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* Page footer */
+.page-footer {
+  align-items: center;
+  background-color: #2e3038;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.page-footer__link:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    justify-content: space-between;
+    padding: 30px 40px;
+  }
+  
+  .page-header__nav {
+    background-color: #fff;
+    display: none;
+    flex: 100%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .page-header__nav-item {
+    flex: 100%;
+  }
+
+  .page-header__nav-item:not(:last-child) {
+    color: #4c4c4d;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .page-header__nav-item:first-child,
+  .page-header__nav-item:last-child {
+    margin-left: 0;
+  }
+ 
+  .page-header__hamburger-icon {
+    cursor: pointer;
+    display: initial;
+  }
+
+  .active {
+    display:flex;
+  }
+
+  .awards,
+  .articles,
+  .about,
+  .chats {
+    padding: 60px 40px; 
+  }
+  
+  .awards__title {
+    font-size: 2.5rem;
+  }
+
+  .awards__logo  {
+    display: flex;
+    flex-basis: calc((100% / 3) - 25px);
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .awards__logo:not(:last-child)  {
+    margin-right: 0;
+  }
+
+  .awards__logo:last-child  {
+    justify-content: center;
+  }
+
+  .articles {
+    flex-wrap: wrap;
+  }
+  
+  .articles__item {
+    flex-basis: 100%;
+  }
+
+  .articles__item:first-child {
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
+
+  .about {
+    background-color: #2e3038;
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .chats__item {
+    max-width: 100%;
+  }
+  
+  .page-footer {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-header__logo {
+    font-size: 1rem;
+  }
+  
+  .awards__logo  {
+    flex-basis: calc((100% / 2) - 25px);
+  }  
+
+  .awards__title {
+    font-size: 2rem;
+  }
+
+  .articles__title,
+  .about__title,
+  .chats__title {
+    font-size: 1.5rem;
+  }
+
+  .page-footer {
+    justify-content: center;
+  }
+  
+  .page-footer__item {
+    flex: 100%;
+    text-align: center;
+  }
+  
+  .page-footer__item:last-child {
+    margin-top: 15px;
+  }
+}
