@@ -1,0 +1,228 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-image: url(Assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #3b3b3b;
+  font-family: 'Work Sans', sans-serif;
+  font-size: .9375rem;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Main section */
+.page-main {
+  flex: 1;
+}
+
+/* App */
+.app {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+/* App header */
+.app__header {
+  align-items: center;
+  background-color: #1b52e5;
+  background-image: url(Assets/Pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  min-height: 230px;
+  padding: 30px 80px;
+}
+
+.app__title {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* App body */
+.app__body {
+  background-color: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-height: 100px;
+  padding: 30px 20px;
+}
+
+.app__copy {
+  text-align: center;
+}
+
+.app__stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.app__stack--horizontal-center {
+  justify-content: center;
+}
+
+/* App form */
+.email,
+.submit {
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.email {
+  background-color: #ededed;
+  border: 1px solid lightgray;
+  flex: 2;
+  color: #777777;
+  margin-right: 6px;
+}
+
+.submit {
+  background-color: #1b52e5;
+  border: 1px solid #1b52e5;
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+}
+
+.tooltip {
+  color: #777777;
+  font-size: .875rem;
+  margin-top: 10px;
+}
+
+/* App profile section */
+.app__avatar {
+  margin-right: 10px
+}
+
+/* App quote section */
+.app__quote {
+  display: inline-block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .app {
+    max-width: 100%;
+  }
+
+  .app__header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-height: 450px;
+    padding: 30px 60px;
+}
+
+  .app__body {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .email,
+  .submit {
+    flex: 100%;
+  }
+  
+  .email {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
