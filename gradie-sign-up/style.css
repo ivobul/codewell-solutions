@@ -1,0 +1,247 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-image: url(Assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Page main */
+.page-main {
+  flex: 1;
+}
+
+/* Page main - App */
+.app {
+  display: flex;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.app__item {
+  flex: 1; 
+}
+
+/* App - hero section */
+.hero {
+  background-color: #013243;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 0;
+  text-align: center;
+}
+
+.hero__title {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.hero__subtitle {
+  color: #86bfd3;
+  margin-top: 5px;
+}
+
+.hero__image {
+  margin-top: 80px;
+}
+
+/* App - body section */
+.app-body {
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #c1c1c1;
+  padding: 40px;
+}
+
+.app-body__title {
+  font-size: 2.2rem;
+}
+
+/* App - body form */
+.app-body__form {
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__item--flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item--flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__email,
+.form__password,
+.form__submit  {
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.form__email,
+.form__password {
+  border: 1px solid lightgray;
+  margin-top: 5px;
+}
+
+.form__checkbox {
+  margin-bottom: 27px;
+  margin-right: 8px;
+}
+
+.form__submit {
+  background-color: #013243;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 14px;
+}
+
+.form__label-email,
+.form__label-password {
+  font-weight: bold;
+}
+
+.form__label-checkbox {
+  font-size: .875rem;
+}
+
+.link {
+  color: #013243;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .app__item {
+    flex: 100%;
+  }
+
+  .hero {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .app-body {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    padding: 0;
+  }
+  
+  .hero {
+    border-radius: 0;
+  }
+  
+  .app-body {
+    border-radius: 0;
+    padding: 40px 20px;
+  }
+}
