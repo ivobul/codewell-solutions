@@ -3,3 +3,4 @@
 - [Newsletter Popup Template](https://ivobul.github.io/codewell-solutions/newsletter-popup-template/)
 - [Snipper Landing Page](https://ivobul.github.io/codewell-solutions/snipper-landing-page/)
 - [Gradie Sign Up](https://ivobul.github.io/codewell-solutions/gradie-sign-up/)
+- [Commune Waitlist Page](https://ivobul.github.io/codewell-solutions/commune-waitlist/)
