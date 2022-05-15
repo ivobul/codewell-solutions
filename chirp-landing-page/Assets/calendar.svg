@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="782.27" height="800" version="1.1" viewBox="0 0 782.26802 800.00001" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <mask id="a" maskUnits="userSpaceOnUse">
+   <circle cx="400" cy="400" r="400" color="#000000" color-rendering="auto" fill="#fff" fill-rule="evenodd" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+  </mask>
+ </defs>
+ <g transform="translate(0 -252.36)">
+  <g transform="translate(-61.541 263.91)">
+   <path transform="matrix(1.893 0 0 1.893 -304.52 -368.74)" d="m250 188.69v61.18h15.789v-61.18h-15.789zm142.11 0v61.18h15.791v-61.18h-15.791zm142.1 0v61.18h15.791v-61.18h-15.791zm-325.79 24.35c-8.2843 0-15 6.7157-15 15v39.217h-0.043v344.05h413.25v-344.05h-0.043v-39.217c0-8.2843-6.7157-15-15-15h-37.828v40.58h-23.291v-40.58h-118.81v40.58h-23.289v-40.58h-118.82v40.58h-23.289v-40.58h-37.832zm9.1113 72.846h364.94v39.285h-364.94v-39.285zm0 77.145h61v61h-61v-61zm75.99 0h61v61h-61v-61zm75.979 0h61v61h-61v-61zm75.99 0h61v61h-61v-61zm75.98 0h61v61h-61v-61zm-303.94 82h61v61h-61v-61zm75.99 0h61v61h-61v-61zm75.979 0h61v61h-61v-61zm75.99 0h61v61h-61v-61zm75.98 0h61v61h-61v-61zm-303.94 82.01h61v61h-61v-61zm75.99 0h61v61h-61v-61zm75.979 0h61v61h-61v-61zm75.99 0h61v61h-61v-61zm75.98 0h61v61h-61v-61z" color="#000000" color-rendering="auto" fill="#404040" fill-rule="evenodd" image-rendering="auto" mask="url(#a)" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+  </g>
+ </g>
+</svg>
