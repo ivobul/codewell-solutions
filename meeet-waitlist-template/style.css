@@ -1,0 +1,269 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+:root {
+  --bg-color: #013243;
+  --color-green: #32F5C8;
+  --color-deep-green: #0a565b;
+  --color-gray: #a9bdc6;
+}
+
+.page {
+  background-color: var(--bg-color);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px 120px 80px;
+  position: relative;
+}
+
+.page-main {
+  flex: 1;
+}
+
+.page-main__title {
+  color: var(--color-green);
+  font-family: 'Sen', sans-serif;
+  font-size: 8rem;
+  margin-top: 60px;
+  letter-spacing: 5px;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.page-main__copy {
+  color: var(--color-gray);
+  font-size: 1.2rem;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+
+.page-main__button {
+  background-color: var(--color-green);
+  border-radius: 5px;
+  color: var(--color-deep-green);
+  display: inline-block;
+  font-weight: bold;
+  padding: 14px 20px;
+}
+
+.page-main__social {
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.page-main__icon {
+  margin-right: 10px;
+  width: 36px;
+}
+
+.page-main__link {
+  color: var(--color-gray)
+}
+
+.page-main__link:visited {
+  color: var(--color-gray)
+}
+
+.user-avatar {
+  position: absolute;
+  z-index: -10;
+}
+
+.user-avatar-1 {
+  right: 100px;
+  top: 300px;
+  width: 100px;
+}
+
+.user-avatar-2 {
+  right: 100px;
+  top: 45px;
+  width: 130px;
+}
+
+.user-avatar-3 {
+  left: 60px;
+  top: 100px;
+  width: 110px;
+}
+
+.user-avatar-4 {
+  bottom: 80px;
+  right: 150px;
+  width: 160px;
+}
+
+.user-avatar-5 {
+  right: 270px;
+  top: 100px;
+  width: 100px;
+}
+
+@media (max-width: 1200px) {
+  .page-main__title {
+    font-size: 6.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 40px 30px 80px;
+  }
+  
+  .page-main__title {
+    font-size: 5rem;
+    margin-top: 180px;
+  }
+
+  .user-avatar-1 {  
+    top: 350px;
+  }
+
+  .user-avatar-2 {
+    top: 85px;
+  }
+
+  .user-avatar-4 {
+    bottom: 80px;
+  }
+
+  .user-avatar-5 {
+    top: 230px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-main__title {
+    font-size: 4rem; 
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 40px 20px 80px;
+  }
+  
+  .page-main__title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 130px; 
+  }
+
+    .user-avatar-1 {
+    display: none;
+  }
+
+  .user-avatar-2 {
+    right: 20px;
+    top: 85px;
+    width: 120px;
+  }
+  
+  .user-avatar-3 {
+    left: 20px;
+    top: 100px;
+    width: 100px;
+  }
+
+   .user-avatar-4 {
+    bottom: 60px;
+    right: 30px;
+    width: 140px;
+  }
+  
+  .user-avatar-5 {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .page-main__title {
+    font-size: 2.2rem;
+  }
+}
