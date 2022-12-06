@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieBrew | Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="signup">
+    <div class="signup-container">
+      <header class="signup-header">
+        <a href="signup.html" class="signup-header__link">
+          <img src="assets/logo.svg" alt="Site logo" class="signup-header__logo">
+        </a>
+        <a href="index.html" class="signup-header__link">
+          <img src="assets/back-arrow.svg" alt="" class="back-arrow-icon">
+          <span class="back-home-text font-bold">Back to homepage</span>
+        </a>
+      </header>
+      <main class="signup-main">
+        <div class="signup-main__left">
+          <h1 class="signup-main__title">Create your personalized feed.</h1>
+          <div class="signup-main__left-stack">
+            <span>🎈</span>
+            <p class="signup-main__copy"><span class="font-bold">Over 20 resources.</span> With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</p>
+          </div>
+          <div class="signup-main__left-stack">
+            <span>🗞️</span>
+            <p class="signup-main__copy"><span class="font-bold">Delivered weekly.</span> Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.</p>
+          </div>
+          <div class="signup-main__left-stack">
+            <span>💡</span>
+            <p class="signup-main__copy"><span class="font-bold">Unlimited ideas.</span> With all the ideas   you'll be reading about, what's stopping you from creating a sustainable startup?</p>
+          </div>
+        </div>
+        <div class="signup-main__right">
+          <form action="signup.html" class="signup-main__form">
+            <h2 class="signup-main__form-title">Create your IndieBrew Account</h2>
+            <div class="signup-main__form-stack">
+              <label for="email" class="font-bold">Email</label>
+              <input type="email" name="email" id="email" class="signup-main__input-email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+            <div class="signup-main__form-stack">
+              <label for="fname" class="font-bold">Full Name</label>
+              <input type="text" name="fname" id="fname" class="signup-main__input-text" placeholder="John Doe" pattern="[a-zA-Z ]*" required>
+            </div>
+            <div class="signup-main__form-stack">
+              <label for="password" class="font-bold">Password</label>
+              <input type="password" name="password" id="password" class="signup-main__input-password" placeholder="At least 8 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[()\[\]{}?!$%&/=*+~,.;:<>_-])(?=.*[A-Z]).{8,}" required>
+            </div>
+            <div class="signup-main__form-stack">
+              <input type="checkbox" name="checkbox" id="checkbox" required>
+              <label for="checkbox">By creating an account on IndieBrew, you agree to the <a href="#" class="signup-main__form-link font-bold">Terms and Conditions.</a></label>
+            </div>
+              <button type="submit" class="signup-main__submit-btn">Create an Account</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
