@@ -447,6 +447,10 @@ a {
 }
 
 /* IndieBrew - Signup */
+.emoji {
+  font-family: 'Noto Color Emoji', sans-serif;
+}
+
 .signup-container {
   display: flex;
   flex-direction: column;
