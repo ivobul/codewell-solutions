@@ -129,6 +129,7 @@ a {
   border: 1px solid transparent;
   border-radius: 6px;
   padding: 16px 30px;
+  transition: background-color .3s;
 }
 
 .button:visited {
@@ -565,6 +566,7 @@ a {
   cursor: pointer;
   height: 50px;
   padding: 0 15px;
+  transition: background-color .3s;
   width: 100%;
 }
 
