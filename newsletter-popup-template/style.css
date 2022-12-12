@@ -175,6 +175,11 @@ a {
   color: #fff;
   cursor: pointer;
   flex: 1;
+  transition: background-color .3s
+}
+
+.submit:hover {
+  background-color: #5f85ec;
 }
 
 .tooltip {
