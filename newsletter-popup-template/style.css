@@ -171,11 +171,11 @@ a {
 
 .submit {
   background-color: #1b52e5;
-  border: 1px solid #1b52e5;
+  border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
   flex: 1;
-  transition: background-color .3s
+  transition: background-color .3s;
 }
 
 .submit:hover {
