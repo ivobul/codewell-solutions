@@ -20,7 +20,7 @@
             <p class="app__copy">Receive daily emails on how to best create email templates, completely free.</p>
             <form action="index.html" class="app__form">
               <div class="app__stack">
-                <input type="email" name="email" placeholder="Email Address" id="email" class="email" aria-label="Email Address">
+                <input type="email" name="email" placeholder="Email Address" id="email" class="email" aria-label="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 <input type="submit" value="Subscribe" id="submit" class="submit">
               </div><!-- App stack -->
               <p class="tooltip">No spam, ever. Unsubscribe anytime.</p>
