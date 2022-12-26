@@ -240,6 +240,10 @@ a {
   margin-top: 15px;
 }
 
+.articles__link {
+  width: max-content;
+}
+
 .articles__link:hover {
   text-decoration: underline;
 }
