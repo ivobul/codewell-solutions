@@ -139,8 +139,20 @@ a {
   font-size: 1.2rem;
 }
 
-.page-header__hamburger-icon {
+.page-header__hamburger {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
   display: none;
+  height: 32px;
+  outline: none;
+  width: 32px;
+}
+
+.material-icons {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .page-header__nav {
@@ -327,7 +339,7 @@ a {
     margin-left: 0;
   }
  
-  .page-header__hamburger-icon {
+  .page-header__hamburger {
     cursor: pointer;
     display: initial;
   }
@@ -391,8 +403,18 @@ a {
 }
 
 @media screen and (max-width: 400px) {
+  .page-header {
+    padding: 30px 20px;
+  }
   .page-header__logo {
     font-size: 1rem;
+  }
+  
+  .awards,
+  .articles,
+  .about,
+  .chats {
+    padding: 60px 20px; 
   }
   
   .awards__logo  {
@@ -411,6 +433,7 @@ a {
 
   .page-footer {
     justify-content: center;
+    padding: 20px;
   }
   
   .page-footer__item {

@@ -1,6 +1,6 @@
-const mobileMenu = document.querySelector(".page-header__hamburger-icon");
+const hamburger = document.querySelector(".page-header__hamburger");
 const nav = document.querySelector(".page-header__nav");
 
-mobileMenu.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
   nav.classList.toggle("active")
 })
