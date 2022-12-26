@@ -20,17 +20,17 @@
           </div>
           <div class="app__item app-body">
             <h2 class="app-body__title">Login</h2>
-            <form action="/" class="app-body__form form">
+            <form action="index.html" class="app-body__form form">
               <div class="form__item form__item--flex-column">
                 <label for="email" class="form__label-email">Email</label>
-                <input type="email" name="email" placeholder="john@example.com" id="email" class="form__email">
+                <input type="email" name="email" placeholder="john@example.com" id="email" class="form__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
               </div>
               <div class="form__item form__item--flex-column">
                 <label for="password" class="form__label-password">Password</label>
-                <input type="password" name="password" placeholder="At least 8 characters" id="password" class="form__password">
+                <input type="password" name="password" placeholder="At least 8 characters" id="password" class="form__password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[()\[\]{}?!$%&/=*+~,.;:<>_-])(?=.*[A-Z]).{8,}" required>
               </div>
               <div class="form__item form__item--flex-row">
-                <input type="checkbox" name="checkbox" id="checkbox" class="form__checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" class="form__checkbox" required>
                 <label for="checkbox" class="form__label-checkbox">By creating an account, you agree to the <a href="" class="link">Terms & Conditions</a>.</label>
               </div>
               <div class="form__item form__item--flex-column">
