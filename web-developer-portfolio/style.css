@@ -329,11 +329,15 @@ a {
   }
 
   .page-header__nav-item:not(:last-child) {
-    color: #4c4c4d;
+    color: #59595a;
     margin-right: 0;
     margin-bottom: 15px;
   }
-
+  
+  .page-header__nav-item:not(:last-child):hover {
+    color: #262627;
+  }
+  
   .page-header__nav-item:first-child,
   .page-header__nav-item:last-child {
     margin-left: 0;
