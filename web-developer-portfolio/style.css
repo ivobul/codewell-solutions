@@ -107,17 +107,19 @@ a {
 }
 
 .button {
-  background-color: #fbe850;
+  background-color: #fae11e;
   color: #000;
   padding: 12px 22px;
+  transition: background-color .3s;
 }
 
 .button:visited {
-  color: #000;
+  color: #000 !important;
 }
 
 .button:hover {
-  background-color: #fcef82
+  background-color: #fcef82 !important;
+  color: #000 !important;
 }
 
 .button--inline-block {
@@ -145,6 +147,14 @@ a {
   align-items: center;
   display: flex;
   flex: 2;
+}
+
+.page-header__nav-item:visited {
+  color: #adadad;
+}
+
+.page-header__nav-item:hover {
+  color: #8a8a8a;
 }
 
 .page-header__nav-item:not(:last-child) {
@@ -228,6 +238,10 @@ a {
 
 .articles__copy {
   margin-top: 15px;
+}
+
+.articles__link:hover {
+  text-decoration: underline;
 }
 
 /* Main - About section */
