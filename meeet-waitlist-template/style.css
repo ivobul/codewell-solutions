@@ -128,11 +128,18 @@ a {
   display: inline-block;
   font-weight: bold;
   padding: 14px 20px;
+  transition: background-color .3s;
+}
+
+.page-main__button:visited {
+  color: var(--color-deep-green);
+}
+
+.page-main__button:hover {
+  background-color: #28c4a0;
 }
 
 .page-main__social {
-  align-items: center;
-  display: flex;
   margin-top: 50px;
 }
 
@@ -142,11 +149,13 @@ a {
 }
 
 .page-main__link {
-  color: var(--color-gray)
+  align-items: center;
+  color: var(--color-gray);
+  display: flex;
 }
 
 .page-main__link:visited {
-  color: var(--color-gray)
+  color: var(--color-gray);
 }
 
 .user-avatar {
