@@ -345,7 +345,7 @@ a {
  
   .page-header__hamburger {
     cursor: pointer;
-    display: initial;
+    display: block;
   }
 
   .active {
