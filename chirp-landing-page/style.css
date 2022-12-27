@@ -119,6 +119,7 @@ a {
   font-weight: bold;
   padding: 14px 30px;
   text-align: center;
+  transition: background-color .3s;
 }
 
 .button:visited {
@@ -171,8 +172,20 @@ a {
   justify-content: space-between;
 }
 
-.page-header__mobile-menu {
+.page-header__hamburger {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
   display: none;
+  height: 32px;
+  outline: none;
+  width: 32px;
+}
+
+.material-icons {
+  color: #000;
+  font-size: 2rem;
 }
 
 .main-nav__list {
@@ -498,8 +511,8 @@ a {
     flex-wrap: wrap;
   }
   
-  .page-header__mobile-menu {
-    display: initial;
+  .page-header__hamburger {
+    display: block;
   }
   
   .main-nav {
@@ -523,6 +536,10 @@ a {
   .main-nav__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  
+  .main-nav__link {
+    text-align: center;
   }
   
   .active {
