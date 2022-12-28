@@ -116,6 +116,10 @@ a {
   margin-right: 20px;
 }
 
+.main-nav__link:visited {
+  color: #3d525a;
+}
+
 .main-nav__link:hover {
   color: #000;
 }
@@ -123,21 +127,34 @@ a {
 .button {
   background-color: #ee7c0d;
   border-radius: 6px;
-  color: #000;
+  color: #000 !important;
   font-weight: 700;
-  padding: 18px 32px;
+  padding: 16px 32px;
+  transition: background-color .3s;
 }
 
 .button:visited {
-  color: #000;
+  color: #000 !important;
 }
 
 .button:hover {
   background-color: #f3a355;
 }
 
-.site-header__mobile {
+.site-header__hamburger {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
   display: none;
+  height: 32px;
+  outline: none;
+  width: 32px;
+}
+
+.material-icons {
+  color: #000;
+  font-size: 2rem;
 }
 
 /* Site main */
@@ -174,7 +191,8 @@ a {
   margin-right: 20px
 }
 
-/* Site main - main article */
+/* Site main */
+/* Main article */
 .main-article {
   display: flex;
   flex-wrap: wrap;
@@ -194,16 +212,21 @@ a {
   margin-left: 60px;
 }
 
+.main-article__link--decoration:hover {
+  text-decoration: underline;
+}
+
+.main-article__title {
+  display: inline;
+}
+
 .main-article__profile-name {
   color: #000;
   font-weight: 700;
 }
 
-.main-article__link--decoration:hover {
-  text-decoration: underline;
-}
-
-/* Site main - main article */
+/* Site main */
+/* Articles */
 .article {
   margin-top: 80px;
 }
@@ -212,8 +235,12 @@ a {
   margin-right: 30px;
 }
 
-.article__title {
+.article__preview {
   margin-top: 20px;
+}
+
+.article__title {
+  display: inline;
 }
 
 .article__link--decoration:hover {
@@ -244,9 +271,6 @@ a {
   .main-article__preview {
     flex: 100%;
     margin-left: 0;
-  }
-  
-  .main-article__title {
     margin-top: 20px;
   }
 
@@ -268,8 +292,8 @@ a {
     flex: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
-    padding: 30px;
+    margin-top: 20px;
+    padding: 20px;
     text-align: center;
   }
 
@@ -279,11 +303,15 @@ a {
   
   .main-nav__link:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
-  .site-header__mobile {
-    display: initial;
+  .site-header__hamburger {
+    display: block;
+  }
+  
+  .active {
+    display: flex;
   }
 
   .site-footer {
@@ -299,15 +327,11 @@ a {
   .site-footer__copyright {
     margin-top: 15px;
   }
-
-  .active {
-    display: inline-flex;
-  }
 }
 
 @media (max-width: 576px) {
   .container {
-    padding: 40px 30px;
+    padding: 40px 20px;
   }
   
   .main-article__title,
