@@ -1,6 +1,14 @@
-const mobileMenu = document.querySelector(".page-header__mobile-menu");
-const navigation = document.querySelector(".page-header__nav");
+const hamburger = document.querySelector(".page-header__hamburger");
+const hamburgerIcon = hamburger.querySelector(".material-icons");
+const nav = document.querySelector(".page-header__nav");
 
-mobileMenu.addEventListener("click", () => {
-  navigation.classList.toggle("active")
-})
+hamburger.addEventListener("click", () => {
+  if (hamburgerIcon.innerText === "menu") {
+    hamburgerIcon.innerText = "close";
+  }
+  else {
+    hamburgerIcon.innerText = "menu";
+  }
+  
+  nav.classList.toggle("active");
+});
