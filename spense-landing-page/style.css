@@ -84,7 +84,7 @@ a {
   --bg-header-section2: #f0eeeb;
   --border-radius: 7px;
   --font-size-copy: 1.125rem;
-  --line-height-title: 1.3;
+  --line-height-title: 1.2;
   --font-size-logo: 1.7rem;
   --body-color-copy: #5a5444;
   --footer-color-copy: #9e9e9e;
@@ -381,10 +381,15 @@ a {
   padding: 40px 100px;
 }
 
+.page-footer__logo-link {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
 .page-footer__title {
   color: var(--white);
   font-size: var(--font-size-logo);
-  margin-bottom: 15px;
+  line-height: var(--line-height-title);
 }
 
 .page-footer__subtitle {
