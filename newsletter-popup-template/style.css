@@ -82,7 +82,7 @@ a {
   background-image: url(Assets/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #3b3b3b;
+  color: #595959;
   font-family: 'Work Sans', sans-serif;
   font-size: .9375rem;
 }
@@ -93,10 +93,6 @@ a {
   justify-content: center;
   min-height: 100vh;
   padding: 40px 30px;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 /* Main section */
@@ -144,16 +140,6 @@ a {
   text-align: center;
 }
 
-.app__stack {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.app__stack--horizontal-center {
-  justify-content: center;
-}
-
 /* App form */
 .email,
 .submit {
@@ -183,13 +169,31 @@ a {
   background-color: #5f85ec;
 }
 
-.tooltip {
+.small-text {
   color: #777777;
-  font-size: .875rem;
+  font-size: .85rem;
   margin-top: 10px;
 }
 
 /* App profile section */
+.app__stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.app__stack--horizontal-center {
+  justify-content: center;
+}
+
+.app__stack-title {
+  color: #000;
+}
+
+.app__stack-subtitle {
+  font-weight: 400;
+}
+
 .app__avatar {
   margin-right: 10px
 }
