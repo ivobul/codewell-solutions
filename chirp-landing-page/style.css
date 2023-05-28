@@ -170,6 +170,9 @@ a {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .page-header__hamburger {
@@ -197,6 +200,10 @@ a {
   margin-right: 30px;
 }
 
+.main-nav__link--hover {
+  transition: color .3s;
+}
+
 .main-nav__link--hover:visited {
   color: #111;
 }
@@ -206,7 +213,9 @@ a {
 }
 
 .page-header__body {
-  margin-top: 50px;
+  margin: 50px auto 0;
+  max-width: 1140px;
+  width: 100%;
 }
 
 /* Page header - Hero section */
@@ -245,6 +254,7 @@ a {
   color: #1f7898;
   font-weight: bold;
   margin-left: 20px;
+  transition: color .3s;
 }
 
 .hero__links-item:last-child:hover {
@@ -273,6 +283,12 @@ a {
 /* Page main - Features section */
 .features {
   background-color: #fff;
+}
+
+.features__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .features__title {
@@ -309,6 +325,12 @@ a {
 /* Page main - Testimonials section */
 .testimonials {
   background-color: #d7f5f5;
+}
+
+.testimonials__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .testimonials__stack {
@@ -376,6 +398,12 @@ a {
   background-color: #fff;
 }
 
+.pricing__container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
 .pricing__title,
 .pricing__subtitle {
   text-align: center;
@@ -434,11 +462,17 @@ a {
 
 /* Page footer */
 .page-footer {
-  align-items: center;
   background-color: #d7f5f5;
+  padding: 30px 80px;
+}
+
+.page-footer__container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 30px 80px;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .page-footer__nav {
@@ -448,6 +482,10 @@ a {
 
 .page-footer__link:not(:last-child) {
   margin-right: 30px;
+}
+
+.page-footer__link--hover {
+  transition: color .3s;
 }
 
 .page-footer__link--hover:visited {
@@ -624,10 +662,13 @@ a {
     max-width: 500px;
     padding: 20px;
   }
-
+  
   .page-footer {
-    flex-wrap: wrap;
     padding: 30px 20px;
+  }
+
+  .page-footer__container {
+    flex-wrap: wrap;
   }
 
   .page-footer__nav {
