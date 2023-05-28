@@ -195,6 +195,11 @@ a {
   color: #fff;
   cursor: pointer;
   padding: 14px;
+  transition: background-color .5s;
+}
+
+.form__submit:hover {
+  background-color: #335B68;
 }
 
 .form__label-email,
