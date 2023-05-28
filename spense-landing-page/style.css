@@ -81,7 +81,7 @@ a {
 :root {
   --black: #000;
   --white: #fff;
-  --bg-header-section2: #f0eeeb;
+  --bg-header-color: #f0eeeb;
   --border-radius: 7px;
   --font-size-copy: 1.125rem;
   --line-height-title: 1.2;
@@ -129,7 +129,7 @@ a {
 
 /* Page header */
 .page-header {
-  background-color: var(--bg-header-section2);
+  background-color: var(--bg-header-color);
   padding: 40px 100px;
 }
 
@@ -293,7 +293,7 @@ a {
 }
 
 .page-main__escrow {
-  background-color: var(--bg-header-section2);
+  background-color: var(--bg-header-color);
   border-radius: var(--border-radius);
   display: flex;
   gap: 30px;
@@ -604,6 +604,7 @@ a {
 
   .page-header__input,
   .page-header__submit {
+    height: 57px;
     width: 100%;
   }
 
