@@ -113,7 +113,7 @@ a {
 /* App header */
 .app__header {
   align-items: center;
-  background-color: #1b52e5;
+  background-color: #2355F2;
   background-image: url(Assets/Pattern.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,24 +157,25 @@ a {
 /* App form */
 .email,
 .submit {
-  border-radius: 6px;
-  padding: 8px 16px;
+  border-radius: 5px;
+  padding: 14px 10px;
 }
 
 .email {
-  background-color: #ededed;
-  border: 1px solid lightgray;
+  background-color: #F5F7FA;
+  border: 1px solid #E6E8F0;
   flex: 2;
-  color: #777777;
-  margin-right: 6px;
+  color: #47494e;
+  margin-right: 10px;
 }
 
 .submit {
-  background-color: #1b52e5;
+  background-color: #2355F2;
   border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
   flex: 1;
+  font-weight: 600;
   transition: background-color .3s;
 }
 
