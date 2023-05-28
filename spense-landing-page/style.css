@@ -337,6 +337,7 @@ a {
   color: var(--black);
   font-size: var(--font-size-copy);
   margin-top: 20px;
+  transition: color .3s;
 }
 
 .page-main__escrow-link:visited {
@@ -384,6 +385,7 @@ a {
   font-size: var(--font-size-copy);
   margin-top: 20px;
   text-transform: capitalize;
+  transition: color .3s;
 }
 
 .page-main__texteditor-link:visited {
