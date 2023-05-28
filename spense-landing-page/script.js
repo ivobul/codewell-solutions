@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".page-header__hamburger");
 const hamburgerIcon = hamburger.querySelector(".material-icons");
-const nav = document.querySelector(".page-header__nav");
+const mobileNav = document.querySelector(".mobile-nav");
 
 hamburger.addEventListener("click", () => {
   if (hamburgerIcon.innerText === "menu") {
@@ -10,5 +10,5 @@ hamburger.addEventListener("click", () => {
     hamburgerIcon.innerText = "menu";
   }
   
-  nav.classList.toggle("active");
+  mobileNav.classList.toggle("active");
 });
