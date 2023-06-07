@@ -107,6 +107,9 @@ a {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .page-header__hamburger {
@@ -132,6 +135,10 @@ a {
   gap: 30px;
 }
 
+.page-header__nav-link {
+  transition: color .3s;
+}
+
 .page-header__nav-link:hover {
   color: #464646;
 }
@@ -142,7 +149,7 @@ a {
   border: 1px solid transparent;
   border-radius: 6px;
   padding: 16px 30px;
-  transition: background-color .3s;
+  transition: background-color .5s;
 }
 
 .button:visited {
@@ -155,7 +162,9 @@ a {
 
 .page-header__main {
   display: flex;
-  margin-top: 70px;
+  margin: 70px auto 0;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .page-header__main-left,
@@ -198,12 +207,16 @@ a {
 .page-main {
   background-color: #fff;
   flex: 1;
+  padding: 0 80px;
 }
 
 .section-one,
 .section-two {
   display: flex;
-  padding: 40px 80px;
+  padding: 40px 0;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .section-one__left,
@@ -220,9 +233,9 @@ a {
   justify-content: center;
 }
 
-.section-one__left,
-.section-two__left {
-  padding-right: 30px;
+.section-one__right,
+.section-two__right {
+  padding-left: 135px;
 }
 
 .section-one__title,
@@ -252,15 +265,21 @@ a {
 
 .section-one__link:hover,
 .section-two__link:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 /* IndieBrew - Home page - Page footer */
 .page-footer {
   background-color: #fdfcf9;
+  padding: 40px 80px;
+}
+
+.page-footer__container {
   display: flex;  
   gap: 30px;
-  padding: 40px 80px;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .page-footer__site-info {
@@ -293,9 +312,10 @@ a {
 
 .page-footer__link {
   display: block;
+  transition: color .3s;
 }
 .page-footer__link:hover {
-  color: #323232
+  color: #5a5a5a;
 }
 
 .page-footer__link:not(:last-child) {
@@ -326,6 +346,11 @@ a {
     padding-top: 30px;
   }
   
+  .section-one__right,
+  .section-two__right {
+    padding-left: 16px;
+  }
+  
   .page-footer__site-info,
   .page-footer__nav {
     flex: 50%;
@@ -347,10 +372,12 @@ a {
 
 @media (max-width: 767px) {
   .page-header,
-  .section-one,
-  .section-two,
   .page-footer {
-    padding: 40px 30px;
+    padding: 40px;
+  }
+  
+  .page-main{
+    padding: 0 40px;
   }
   
   .page-header__top {
@@ -399,9 +426,9 @@ a {
     padding-top: 50px;
   }
 
-  .section-one__left,
-  .section-two__left {
-    padding-right: 0;
+  .section-one__right,
+  .section-two__right {
+    padding-left: 0;
   }
   
   .section-one__left {
@@ -416,10 +443,12 @@ a {
 
 @media (max-width: 600px) {
   .page-header,
-  .section-one,
-  .section-two,
   .page-footer {
     padding: 40px 20px;
+  }
+  
+  .page-main{
+    padding: 0 20px;
   }
   
   .page-header__title {
@@ -442,7 +471,7 @@ a {
     max-width: 100%;
   }
 
-  .page-footer {
+  .page-footer__container {
     flex-wrap: wrap;
   }
   
@@ -470,7 +499,7 @@ a {
   flex-direction: column;
   margin-inline: auto;
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1140px;
   padding: 40px;
   width: 100%;
 }
