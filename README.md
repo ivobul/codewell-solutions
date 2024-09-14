@@ -3,6 +3,7 @@
 - [Chirp Landing Page](https://ivobul.github.io/codewell-solutions/chirp-landing-page/)
 - [Commune Waitlist Page](https://ivobul.github.io/codewell-solutions/commune-waitlist/)
 - [Gradie Sign Up](https://ivobul.github.io/codewell-solutions/gradie-sign-up/)
+- [Hosterr Waitlist Page](https://ivobul.github.io/codewell-solutions/hosterr-waitlist/}
 - [IndieBrew Landing Page](https://ivobul.github.io/codewell-solutions/indie-brew/)
 - [JavaScript30 Navbar Page](https://ivobul.github.io/codewell-solutions/javascript30-navbar/)
 - [Meeet Waitlist Template](https://ivobul.github.io/codewell-solutions/meeet-waitlist-template/)
