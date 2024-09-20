@@ -1,0 +1,282 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.page {
+  background-image: url(Assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Rubik", system-ui;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 80px 110px;
+  width: 100%;
+}
+
+.sr-only {
+  border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* Page element */
+.page-element {
+  background-color: #ffffff;
+  border-radius: 8px;
+  flex-basis: 770px;
+  min-height: 100px;
+  padding: 50px 45px;
+}
+
+/* Page element list */
+.page-element__list {
+  position: relative;
+}
+
+.page-element__list::before {
+  background-color: #AEAEAE;
+  content: "";
+  height: calc(100% - 60px);
+  left: 25px;
+  position: absolute;
+  top: 60px;
+  width: 1px;
+}
+
+.page-element__list--margin-top {
+  margin-top: 40px;
+}
+
+.page-element__list--nested {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+/* Page element comment */
+.page-element__comment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Page element comment letf part */
+.page-element__comment-left {
+  flex-basis: 49px;
+}
+
+/* Page element comment right part */
+.page-element__comment-right {
+  flex: 1;
+}
+
+.page-element__comment-right-top,
+.page-element__comment-right-main,
+.page-element__comment-right-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Page element comment right top part */
+.page-element__comment-right-top {
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.page-element__comment-right-date {
+  color: #737373;
+}
+
+/* Page element comment right main part */
+.page-element__comment-right-main {
+  margin-bottom: 15px;
+}
+
+/* Page element comment right bottom part */
+.page-element__comment-right-bottom {
+  gap: 18px;
+}
+
+.page-element__comment-right-rating-up,
+.page-element__comment-right-rating-down {
+  cursor: pointer;
+}
+
+.page-element__comment-right-count {
+  font-weight: bold;
+}
+
+.page-element__comment-right-link {
+  transition: color .3s;
+}
+
+.page-element__comment-right-link:hover {
+  color: #7f7f7f;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .page {
+    background-image: url(Assets/bg-mobile.jpg);
+  }
+
+  .container {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 80px 20px;
+  }
+
+  .page-element {
+    font-size: .875rem;
+    padding: 30px 20px;
+  }
+  
+  .page-element__list::before {
+    height: calc(100% - 51px);
+    left: 20px;
+    top: 51px;
+  }
+
+  .page-element__comment {
+    gap: 16px;
+  }
+
+  .page-element__comment-left {
+    flex-basis: 40px;
+  }
+}
