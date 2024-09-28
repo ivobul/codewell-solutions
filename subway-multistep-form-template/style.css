@@ -223,6 +223,10 @@ a {
   justify-content: center;
 }
 
+.page-main__form-narrower {
+  flex-basis: 820px;
+}
+
 .page-main__form-row {
   display: flex;
 }
