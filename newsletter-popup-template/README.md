@@ -34,4 +34,4 @@ https://fonts.google.com/specimen/Work+Sans
 
 #### Form Validation
 
-I'm using [JustValidate](https://just-validate.dev/) - a modern form validation library
+Added [JustValidate](https://just-validate.dev/) - a modern form validation library
