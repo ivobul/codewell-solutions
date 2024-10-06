@@ -29,9 +29,7 @@ If you want more real-time communication, you can visit our community on [Slack]
 
 https://fonts.google.com/specimen/Work+Sans
 
----
-
-## Additional functionality
+## Additional functionality - not related with the initial Codewell challenge
 
 ### Form Validation
 
