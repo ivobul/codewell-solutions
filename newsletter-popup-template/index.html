@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="just-validate.production.min.js"></script>
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="page">
@@ -20,8 +21,8 @@
             <p class="app__copy">Receive daily emails on how to best create email templates, completely free.</p>
             <form action="index.html" class="app__form">
               <div class="app__stack">
-                <input type="email" name="email" placeholder="Email Address" id="email" class="email" aria-label="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                <input type="submit" value="Subscribe" id="submit" class="submit">
+                <input type="text" name="email" placeholder="Email Address" id="email" class="email" aria-label="Email Address">
+                <input type="submit" value="Subscribe" class="submit">
               </div><!-- App stack -->
               <p class="small-text">No spam, ever. Unsubscribe anytime.</p>
             </form><!-- App form -->
@@ -37,6 +38,10 @@
         </div><!-- App -->
       </main>
     </div><!-- Container -->
+	
+	<!-- JustValidate - Modern form validation library -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     
+	<script src="script.js"></script>  
   </body>
 </html>

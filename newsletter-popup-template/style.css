@@ -84,7 +84,7 @@ a {
   background-size: cover;
   color: #595959;
   font-family: 'Work Sans', sans-serif;
-  font-size: .9375rem;
+  font-size: .875rem;
 }
 
 .container {
@@ -93,6 +93,12 @@ a {
   justify-content: center;
   min-height: 100vh;
   padding: 40px 30px;
+}
+
+.just-validate-error-label {
+  margin-top: 10px;
+  margin-left: 8px;
+  order: 3;
 }
 
 /* Main section */
@@ -123,7 +129,8 @@ a {
 
 .app__title {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.625rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -153,6 +160,7 @@ a {
   flex: 2;
   color: #47494e;
   margin-right: 10px;
+  order: 1;
 }
 
 .submit {
@@ -162,6 +170,7 @@ a {
   cursor: pointer;
   flex: 1;
   font-weight: 600;
+  order: 2;
   transition: background-color .3s;
 }
 
@@ -171,7 +180,6 @@ a {
 
 .small-text {
   color: #777777;
-  font-size: .85rem;
   margin-top: 10px;
 }
 
@@ -188,6 +196,7 @@ a {
 
 .app__stack-title {
   color: #000;
+  font-weight: 600;
 }
 
 .app__stack-subtitle {
@@ -205,9 +214,15 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     padding: 0;
+  }
+  
+  .just-validate-error-label {
+    bottom: 15px;
+    order: 2;
+    position: relative;
   }
 
   .app {
@@ -234,5 +249,9 @@ a {
   .email {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+  
+  .submit {
+    order: 3;
   }
 }
