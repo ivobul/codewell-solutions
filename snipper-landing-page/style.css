@@ -254,10 +254,16 @@ a {
 .page-footer__wrapper {
   align-items: center;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1140px;
   width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 25px;
 }
 
 @media screen and (max-width: 991px) {
@@ -367,13 +373,12 @@ a {
   
   .footer-nav {
     display: flex;
+    flex: 100%;
     flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 10px;
+    gap: 5px;  
   }
   
-  .footer-nav__item:first-child {
-    margin-right: 0;
+  .footer-nav__item:last-child {
     flex: 100%;
   }
 }
