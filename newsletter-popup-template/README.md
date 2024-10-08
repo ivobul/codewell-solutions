@@ -30,6 +30,6 @@ If you want more real-time communication, you can visit our community on [Slack]
 https://fonts.google.com/specimen/Work+Sans
 
 
-### Form Validation (Mine)
+### Form Validation (New - Not Affiliated with Codewell)
 
 Added [JustValidate](https://just-validate.dev/) - a modern form validation library
