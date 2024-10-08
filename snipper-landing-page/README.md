@@ -28,6 +28,6 @@ If you want more real-time communication, you can visit our community on [Slack]
 
 https://fonts.google.com/specimen/Poppins
 
-### Mobile Navigation Interaction (Mine)
+### Mobile Navigation Interaction (Not Affiliated with Codewell)
 
 Using [Google Material Icons](https://fonts.google.com/icons) and JavaScript
