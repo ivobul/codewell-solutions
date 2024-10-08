@@ -104,11 +104,7 @@ a {
 }
 
 .button:hover {
-  background-color: #4c4c4c;
-}
-
-.display-block {
-  display: block;
+  background-color: #3c3c3c;
 }
 
 .display-inline-block {
@@ -168,6 +164,14 @@ a {
 
 .page-header__list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.page-header__list-item:not(:last-child) .page-header__list-link {
+  transition: color .3s;
+}
+
+.page-header__list-item:not(:last-child) .page-header__list-link:hover {
+  color: #000;
 }
 
 .search-icon {
@@ -266,6 +270,14 @@ a {
   gap: 25px;
 }
 
+.footer-nav__item {
+  transition: color .3s;
+}
+
+.footer-nav__item:hover {
+  color: #000;
+}
+
 @media screen and (max-width: 991px) {
   .page-header {
     padding: 40px 40px 0;
@@ -324,13 +336,17 @@ a {
     display: block;
   }
   
+  .button {
+    border-radius: 0;
+  }
+  
   .page-header__nav {
     background-color: #fff;
     border-radius: 5px;
     display: none;
     flex: 100%;
     margin-top: 20px;
-    padding: 20px;
+    padding: 20px 0;
   }
   
   .active {
@@ -344,15 +360,26 @@ a {
 
   .page-header__list-item {
     flex: 100%;
+    
   }
 
   .page-header__list-item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 20px;
   }
   
   .page-header__list-link {
     display: block;
+    height: 55px;
+    padding: 14px 23px;
+  }
+  
+  .page-header__list-item:not(:last-child) .page-header__list-link {
+    transition: background-color .3s;
+  }
+  
+  .page-header__list-item:not(:last-child) .page-header__list-link:hover{
+    background-color: #dfdfdf;
+    color: #383838;
   }
   
   .search-icon {
