@@ -30,8 +30,6 @@ If you want more real-time communication, you can visit our community on [Slack]
 https://fonts.google.com/specimen/Work+Sans
 
 
-### Additional functionality
-
-#### Form Validation
+### Form Validation (Mine)
 
 Added [JustValidate](https://just-validate.dev/) - a modern form validation library
