@@ -578,15 +578,15 @@ a {
   }
   
   .main-nav__item:not(:last-child) .main-nav__link {
-    display: flex;
     align-items: center;
+    display: flex;
     padding: 0 20px;
     transition: background-color .3s
   }
   
    .main-nav__item:not(:last-child) .main-nav__link:hover {
       background-color: #fff;
-      color: #111;
+      color: #595959;
    }
   
   .active {
