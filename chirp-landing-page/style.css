@@ -572,9 +572,7 @@ a {
   }
   
   .main-nav__link {
-    text-align: center;
     height: 54px;
-    
   }
   
   .main-nav__item:not(:last-child) .main-nav__link {
@@ -584,10 +582,10 @@ a {
     transition: background-color .3s
   }
   
-   .main-nav__item:not(:last-child) .main-nav__link:hover {
-      background-color: #fff;
-      color: #595959;
-   }
+  .main-nav__item:not(:last-child) .main-nav__link:hover {
+    background-color: #fff;
+    color: #595959;
+  }
   
   .active {
     display: flex;
@@ -696,6 +694,6 @@ a {
   }
   
   .page-footer__link:not(:last-child) {
-  margin-right: 0;
-}
+    margin-right: 0;
+  }
 }
