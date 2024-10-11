@@ -79,7 +79,7 @@ a {
 
 /* Basic rules */
 .page {
-  color: #737373;
+  color: #595959;
   font-family: 'Inter', sans-serif;
   font-size: 1.125rem;
 }
@@ -189,7 +189,6 @@ a {
 }
 
 .main-nav__item:not(:last-child) .main-nav__link {
-  color: #595959;
   font-size: 1.125rem;
   transition: color .3s;
 }
