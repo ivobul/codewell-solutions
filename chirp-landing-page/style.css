@@ -100,7 +100,7 @@ a {
 }
 
 .button {
-  background-color: #0c85d0;
+  background-color: #0b76b8;
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
@@ -115,7 +115,7 @@ a {
 }
 
 .button:hover {
-  background-color: #4db5f5;
+  background-color: #0d95e8;
 }
 
 .button__image {
