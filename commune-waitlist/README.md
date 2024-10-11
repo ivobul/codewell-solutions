@@ -28,4 +28,6 @@ If you want more real-time communication, you can visit our community on [Slack]
 
 https://fonts.google.com/specimen/Nunito+Sans
 
+### Mobile Navigation Interaction (New)
 
+Using [Google Material Icons](https://fonts.google.com/icons) and JavaScript
