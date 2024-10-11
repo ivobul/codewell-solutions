@@ -336,10 +336,6 @@ a {
     display: block;
   }
   
-  .button {
-    border-radius: 0;
-  }
-  
   .page-header__nav {
     background-color: #fff;
     border-radius: 5px;
@@ -360,11 +356,14 @@ a {
 
   .page-header__list-item {
     flex: 100%;
-    
   }
 
   .page-header__list-item:not(:last-child) {
     margin-right: 0;
+  }
+  
+  .page-header__list-item:last-child {
+    margin: 25px 23px 0;
   }
   
   .page-header__list-link {
@@ -374,11 +373,12 @@ a {
   }
   
   .page-header__list-item:not(:last-child) .page-header__list-link {
+    text-align: left;
     transition: background-color .3s;
   }
   
   .page-header__list-item:not(:last-child) .page-header__list-link:hover{
-    background-color: #dfdfdf;
+    background-color: #efefef;
     color: #383838;
   }
   
