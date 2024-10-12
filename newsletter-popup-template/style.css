@@ -178,6 +178,16 @@ a {
   background-color: #5f85ec;
 }
 
+.just-validate-error-field {
+  border: 0;
+  color: #e53f3f;
+  outline: 2px solid #ff4747;
+}
+
+.just-validate-error-label {
+    color: #e53f3f;
+  }
+
 .small-text {
   color: #6b6b6b;
   margin-top: 10px;
