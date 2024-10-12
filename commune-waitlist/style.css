@@ -233,6 +233,12 @@ a {
   order: 2;
 }
 
+.just-validate-error-field {
+  border: 0;
+  color: #e53f3f;
+  outline: 2px solid #ff4747;
+}
+
 .just-validate-error-label {
   flex: 100%;
   margin-top: 15px;
