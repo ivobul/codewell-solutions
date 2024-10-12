@@ -215,6 +215,12 @@ a {
   padding-right: 10px;
 }
 
+.just-validate-error-field {
+  border: 0;
+  color: hsl(0, 100%, 74%);
+  outline: 2px solid #ff4747;
+}
+
 .link {
   color: #013243;
   font-weight: bold;
