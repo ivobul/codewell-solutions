@@ -28,4 +28,6 @@ If you want more real-time communication, you can visit our community on [Slack]
 
 https://fonts.google.com/specimen/Roboto
 
+### Form Validation (New)
 
+Added [JustValidate](https://just-validate.dev/) - a modern form validation library
