@@ -28,7 +28,7 @@ validator
   ],
   {
     tooltip: {
-	  position: "left",
+      position: "right",
     },
   })
   .onSuccess(() => {
