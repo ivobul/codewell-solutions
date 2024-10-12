@@ -83,6 +83,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
 }
 
 .container {
@@ -90,7 +91,7 @@ a {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 100px 30px;
 }
 
 /* Page main */
@@ -102,7 +103,8 @@ a {
 .app {
   display: flex;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 862px;
+  width: 100%;
 }
 
 .app__item {
@@ -122,7 +124,7 @@ a {
 
 .hero__title {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .hero__subtitle {
@@ -144,12 +146,12 @@ a {
 }
 
 .app-body__title {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 /* App - body form */
 .app-body__form {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .form {
@@ -158,7 +160,7 @@ a {
 }
 
 .form__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form__item--flex-column {
@@ -175,6 +177,7 @@ a {
 .form__password,
 .form__submit  {
   border-radius: 5px;
+  height: 60px;
   padding: 12px;
 }
 
@@ -191,7 +194,7 @@ a {
 
 .form__submit {
   background-color: #013243;
-  border: none;
+  border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
   padding: 14px;
@@ -203,12 +206,13 @@ a {
 }
 
 .form__label-email,
-.form__label-password {
-  font-weight: bold;
+.form__label-password,
+.form__submit {
+  font-weight: 600;
 }
 
 .form__label-checkbox {
-  font-size: .875rem;
+  padding-right: 10px;
 }
 
 .link {
@@ -217,14 +221,15 @@ a {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .app {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .app__item {
-    flex: 100%;
+    margin: 0 auto;
+    max-width: 443px;
+    width: 100%;
   }
 
   .hero {
@@ -236,7 +241,7 @@ a {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 443px) {
   .container {
     padding: 0;
   }
