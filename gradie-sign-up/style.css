@@ -217,7 +217,7 @@ a {
 
 .just-validate-error-field {
   border: 0;
-  color: hsl(0, 100%, 74%);
+  color: #e53f3f;
   outline: 2px solid #ff4747;
 }
 
