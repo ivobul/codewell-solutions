@@ -129,7 +129,16 @@ html {
   background-color: #f9f4e8;
   color: #525252;
   font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
   overflow-x: hidden;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+mobile-nav__link {
+
 }
 
 .page-container {
@@ -153,14 +162,13 @@ html {
 
 .btn {
   background-color: #416bd2;
-  border: 1px solid transparent;
+  border: 0;
   border-radius: 6px;
   color: #ffffff;
   cursor: pointer;
-  font-size: 1.12rem;
   font-weight: 700;
-  height: 57px;
-  padding: 14px 26px;
+  height: 63px;
+  padding: 18px 24px;
   transition: background-color .3s;
 }
 
@@ -188,7 +196,6 @@ html {
 
 .page-header__nav-link,
 .page-header__right-link:not(:last-child) {
-  font-size: 1.12rem;
   transition: color .3s;
 }
 
@@ -198,25 +205,24 @@ html {
 }
 
 /* Page header left part */
-.page-header__logo-box {
+.logo-wrapper {
   align-items: center;
   display: flex;
   gap: 10px;
 }
 
-.page-header__mobile-menu {
-  cursor: pointer;
+.page-header__hamburger-icon {
   display: none;
 }
 
-.page-header__promote-text {
+.promote-text {
   background: linear-gradient(to right, #EAB550, #EA5075);
   border-radius: 30px;
   color: #ffffff;
-  font-size: .8rem;
+  font-size: .625rem;
   font-weight: 700;
   margin-bottom: 4px;
-  padding: 6px 16px;
+  padding: 6px 12px;
 }
 
 /* Page header right part */
@@ -251,7 +257,6 @@ html {
 }
 
 .page-main__copy {
-  font-size: 1.125rem;
   margin-top: 20px;
   max-width: 500px;
   width: 100%;
@@ -270,9 +275,10 @@ html {
   border-radius: 6px;
   border: 1px solid transparent;
   flex: 3;
-  height: 57px;
+  font-size: 1rem;
+  height: 63px;
   outline: none;
-  padding: 8px 16px;
+  padding: 6px 10px;
 }
 
 .page-main__form-email:focus {
@@ -326,7 +332,6 @@ html {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.12rem;
   gap: 20px;
   justify-content: space-between;
   padding: 40px 0;
@@ -375,41 +380,99 @@ html {
 /* Responsive design */
 @media (max-width: 1080px) {
   .btn {
-    border-radius: 0;
+    /*border-radius: 0;*/
   }
   
   .page-container {
     padding: 0 40px;
   }
   
-  .page-header {
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    padding: 40px 0;
+    
+  }
+  
+  .mobile-nav__top {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mobile-nav__main {
+    margin-top: 20px;
+    display: flex;
     flex-wrap: wrap;
+    
+  }
+  
+  .mobile-nav__link {
+    padding: 0 20px;
+    flex: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-nav__link:last-child {
+    margin: 30px 20px 0;
+    justify-content: center;
+  }
+  
+  .mobile-nav__link:not(:last-child):hover {
+    background-color: gray;
+  }
+  
+  .page-header__hamburger-icon {
+  display: block;
+  cursor: pointer;
+  }
+  
+  .material-icons {
+  color: #000;
+  font-size: 2rem;
+}
+  
+  
+  .page-header {
+    /*flex-wrap: wrap;*/
   }
   
   .page-header__mobile-menu {
-    display: block;
+    
   }
   
   .page-header__nav,
   .page-header__right {
-    background-color: #ffffff;
+  /*background-color: #ffffff;*/
+    
+    /*flex: 100%;*/
+    /*flex-direction: column;*/
+    /*gap: 0;*/
+    
     display: none;
-    flex: 100%;
-    flex-direction: column;
-    gap: 0;
   }
   
+  
   .page-header__nav {
-    border-radius: 6px 6px 0 0;
-    margin-top: 20px;
-    padding: 20px 0 0;
+  /*border-radius: 6px 6px 0 0;*/
+    /*margin-top: 20px;*/
+    /*padding: 20px 0 0;*/
+  
   }
   
   .page-header__right {
-    border-radius: 0 0 6px 6px;
-    padding: 0 0 20px;
+    /*border-radius: 0 0 6px 6px;*/
+    /*padding: 0 0 20px;*/
   }
-  
+  /*
   .page-header__nav-link,
   .page-header__right-link {
     align-items: center;
@@ -429,7 +492,7 @@ html {
     background-color: #e8edf9;
     color: #525252;
   }
-  
+  */
   .page-main {
     gap: 30px;
     flex-wrap: wrap;
@@ -472,7 +535,7 @@ html {
   }
   
   .active {
-    display: flex;
+    display: block;
   }
 }
 
@@ -549,9 +612,8 @@ html {
 }
 
 @media (max-width: 400px) {
-  .page-header__promote-text {
-    font-size: .7rem;
-    padding: 6px 12px;
+  .promote-text {
+    
   }
   
   .page-main__title {

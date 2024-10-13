@@ -8,18 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="page">
+	<div class="mobile-nav">
+	  <div class="mobile-nav__top">
+	    <a href="index.html" class="logo-wrapper">
+          <img src="assets/logo.svg" alt="Site logo">
+          <span class="promote-text">Hosterr is hiring!</span>
+        </a><!--  -->
+        <span class="material-icons mobile-nav__close-icon">close</span>
+	  </div>
+	  <div class="mobile-nav__main">
+	    <a href="#" class="mobile-nav__link">Plans</a>
+        <a href="#" class="mobile-nav__link">Find Domain</a>
+        <a href="#" class="mobile-nav__link">Why Hosterr</a>
+        <a href="#" class="mobile-nav__link">Sign in</a>
+        <a href="#" class="mobile-nav__link btn">Join Waitlist</a>
+	  </div>
+	</div>
     <div class="page-container">
       <header class="page-header">
-        <a href="index.html" class="page-header__logo-box">
+        <a href="index.html" class="logo-wrapper">
           <img src="assets/logo.svg" alt="Site logo">
-          <span class="page-header__promote-text">Hosterr is hiring!</span>
+          <span class="promote-text">Hosterr is hiring!</span>
         </a><!-- Page header logo -->
-        <div class="page-header__mobile-menu">
-          <img src="assets/hamburger-menu.svg" alt="Mobile menu icon">
-        </div><!-- Page header mobile menu -->
+        <span class="material-icons page-header__hamburger-icon">menu</span>
+        
+        
         <nav class="page-header__nav">
           <a href="#" class="page-header__nav-link">Plans</a>
           <a href="#" class="page-header__nav-link">Find Domain</a>
