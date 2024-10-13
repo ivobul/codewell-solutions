@@ -216,9 +216,9 @@ a {
 }
 
 .just-validate-error-field {
-  border: 0;
+  border: 2px solid #ff4747;
   color: #e53f3f;
-  outline: 2px solid #ff4747;
+  outline: none;
 }
 
 .link {
