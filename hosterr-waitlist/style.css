@@ -432,15 +432,18 @@ html {
   
   .mobile-nav__bottom {
     display: flex;
+    
   }
   
   .mobile-nav__bottom-link {
     margin: 30px 20px 0;
-    flex: 100%
+    flex: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   .page-header__hamburger-icon {
-  display: block;
+    display: block;
   
   }
   
