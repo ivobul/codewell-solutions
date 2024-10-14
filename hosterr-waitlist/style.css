@@ -270,7 +270,7 @@ html {
 
 .page-main__form-email {
   border-radius: 6px;
-  border: 1px solid transparent;
+  border: 0;
   flex: 3;
   font-size: 1rem;
   height: 63px;
