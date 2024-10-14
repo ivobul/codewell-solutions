@@ -4,7 +4,7 @@ const closeIconElem = document.querySelector(".mobile-nav__close-icon")
 
 hamburgerIconElem.addEventListener("click", () => {
   mobileNavElem.classList.add("active")
-  mobileNavElem.style.transition = "left .8s"
+  mobileNavElem.style.transition = "left .5s"
 })
 
 closeIconElem.addEventListener("click", () => {
