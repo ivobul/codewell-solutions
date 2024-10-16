@@ -12,4 +12,22 @@ closeIconElem.addEventListener("click", () => {
   mobileNavElem.style.transition = "left 1s"
 })
 
+// Form Validation
+const validator = new JustValidate(".page-main__form", {
+  tooltip: {
+    position: "top",
+  },
+})
 
+validator
+  .addField("#email", [
+    {
+      rule: "required",
+    },
+    {
+      rule: "email",
+    },
+  ])
+  .onSuccess(() => {
+    document.querySelector(".page-main__form").submit();
+  })

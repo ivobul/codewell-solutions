@@ -286,6 +286,12 @@ html {
   width: max-content;
 }
 
+.just-validate-error-field {
+  border: 2px solid #ff4747;
+  color: #e53f3f;
+  outline: none;
+}
+
 .page-main__form-box {
   align-items: center;
   display: flex;
