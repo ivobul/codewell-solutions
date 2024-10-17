@@ -14,103 +14,108 @@
   <body class="page">
     <div class="container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">Johnathan Specter</a>
-        <button class="page-header__hamburger">
-          <span class="material-icons">menu</span>
-        </button>
-        <nav class="page-header__nav">
-          <a class="page-header__nav-item" href="#">Articles</a>
-          <a class="page-header__nav-item" href="#">Chats</a>
-          <a class="page-header__nav-item" href="#">Awards</a>
-          <a class="page-header__nav-item" href="#">About</a>
-          <a class="page-header__nav-item button" href="#">Get in touch</a>
-        </nav>
+		<div class="page-header__top">
+		  <a class="page-header__logo" href="index.html">
+		    <img src="images/logo.svg" alt="Site logo" class="site-logo-img">
+		  </a>
+          <button class="page-header__hamburger">
+            <span class="material-icons">menu</span>
+          </button>
+          <div class="page-header__mobile">
+            <nav class="page-header__nav">
+              <a class="page-header__nav-link" href="#">Articles</a>
+              <a class="page-header__nav-link" href="#">Chats</a>
+              <a class="page-header__nav-link" href="#">Awards</a>
+              <a class="page-header__nav-link" href="#">About</a>
+            </nav>
+            <a class="page-header__mail button" href="#">Get in touch</a>
+          </div>
+        </div>
+        <div class="page-header__hero">
+		  <h1 class="page-header__title">Helping companies build better, scalable software.</h1>
+		  <p class="page-header__copy">Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and more.</p>
+		  <div class="awards__graphics">
+            <div class="awards__logo">
+              <img src="images/logos/walmart.svg" alt="Walmart logo">              
+            </div>
+            <div class="awards__logo">
+              <img src="images/logos/jp-morgan.svg" alt="JP Morgan logo">  
+            </div>
+            <div class="awards__logo">
+              <img src="images/logos/visa.svg" alt="Visa logo">          
+            </div>
+            <div class="awards__logo">
+              <img src="images/logos/tinder.svg" alt="Tinder logo"> 
+            </div>
+            <div class="awards__logo">
+              <img src="images/logos/samsung.svg" alt="Samsung logo"> 
+            </div>
+            <div class="awards__logo">
+              <img src="images/logos/verizon.svg" alt="Verizon logo">    
+            </div>
+          </div>
+        </div>
       </header>
       <main class="page-main">
-        <section class="awards">
-          <h1 class="awards__title">Helping companies build better, scalable software.</h1>
-          <p class="awards__copy">Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and more.</p>
-          <div class="awards__graphics">
-            <div class="awards__logo">
-              <img src="images/logos/walmart.svg" alt="">              
-            </div>
-            <div class="awards__logo">
-              <img src="images/logos/jp-morgan.svg" alt="">  
-            </div>
-            <div class="awards__logo">
-              <img src="images/logos/visa.svg" alt="">          
-            </div>
-            <div class="awards__logo">
-              <img src="images/logos/tinder.svg" alt=""> 
-            </div>
-            <div class="awards__logo">
-              <img src="images/logos/samsung.svg" alt=""> 
-            </div>
-            <div class="awards__logo">
-              <img src="images/logos/verizon.svg" alt="">    
-            </div>
-          </div>
-        </section>
         <section class="articles">
-          <div class="articles__item">
-            <img src="images/spense.png" alt="" class="articles__image">
-            <a href="#" class="articles__link">
-              <h2 class="articles__title">Spense.com &rarr;</h2>
-            </a>
-            <p class="articles__copy">Rethinking the way writers get paid, an open-source platform designed to help writers focus more on writing, and less on when and how they'll get paid. Project in  collaboration with Codewell.cc.
-            </p>
-          </div>
-          <div class="articles__item">
-            <img src="images/yelpcamp.png" alt="" class="articles__image">
-            <a href="#" class="articles__link">
-              <h2 class="articles__title">YelpCamp.com &rarr;</h2>
-            </a>
-            <p class="articles__copy">Allowing backpack travelers to perfectly plan their trip through an open-source platform similar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favourite in 2021.
-            </p>
-          </div>
+		  <div class="articles__wrapper">
+		    <div class="articles__item">
+              <img src="images/spense.png" alt="Spense logo" class="articles__image">
+              <a href="#" class="articles__link">
+                <h2 class="articles__title">Spense.com &rarr;</h2>
+              </a>
+              <p class="articles__copy">Rethinking the way writers get paid, an open-source platform designed to help writers focus more on writing, and less on when and how they'll get paid. Project in  collaboration with Codewell.cc.</p>
+            </div>
+            
+            <div class="articles__item">
+              <img src="images/yelpcamp.png" alt="Yelpcamp logo" class="articles__image">
+              <a href="#" class="articles__link">
+                <h2 class="articles__title">YelpCamp.com &rarr;</h2>
+              </a>
+              <p class="articles__copy">Allowing backpack travelers to perfectly plan their trip through an open-source platform similar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favourite in 2021.</p>
+            </div>
+		  </div>
         </section>
+        
         <section class="about">
-          <h2 class="about__title">A co-founder at one of the world's largest communities.
-          </h2>
-          <p class="about__copy">The combined experience I have working at the top Fortune 500 companies has allowed me to develop a skillset that helps me in not just development, but in every aspect of any business.
-          </p>
-          <p class="about__copy">I'm proud to announce that I am now working at one of the world's largest communities teaching young minds about how to <em>sell</em> yourself as a developer and open them to a whole new world of opportunities.
-          </p>
-          <p class="about__copy">As a developer, you have everything available to you and all that's holding you back is yourself.
-          </p> 
-          <p class="about__copy">A quote I live by perfectly illustrates what I mean.
-          </p>
-          <p class="about__copy"><q>How big would you dream, if you knew you wouldn't fail?</q>
-          You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leader in something you're passionate about.
-          </p>
-          <p class="about__copy">
-            I'm happy to chat over coffee some time about how I can help your company.
-          </p>
+		  <div class="about__wrapper">
+		    <h2 class="about__title">A co-founder at one of the world's largest communities.</h2>
+            <p class="about__copy">The combined experience I have working at the top Fortune 500 companies has allowed me to develop a skillset that helps me in not just development, but in every aspect of any business.</p>
+            <p class="about__copy">I'm proud to announce that I am now working at one of the world's largest communities teaching young minds about how to <em>sell</em> yourself as a developer and open them to a whole new world of opportunities.</p>
+            <p class="about__copy">As a developer, you have everything available to you and all that's holding you back is yourself.</p> 
+            <p class="about__copy">A quote I live by perfectly illustrates what I mean.</p>
+            <p class="about__copy"><q>How big would you dream, if you knew you wouldn't fail?</q> You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leader in something you're passionate about.</p>
+            <p class="about__copy">I'm happy to chat over coffee some time about how I can help your company.</p>
+		  </div>
         </section>
+        
         <section class="chats">
-          <div class="chats__item">
-            <h2 class="chats__title">Interested in working with me?</h2>
-            <p class="chats__copy">I'm active on all social media platforms listed below, but you can also me an email and I will get back to you within 24-48 hours.
-            </p>
-            <a href="#" class="button button--inline-block">Get in touch</a>
-          </div>
+	      <div class="chats__wrapper">
+	        <div class="chats__item">
+              <h2 class="chats__title">Interested in working with me?</h2>
+              <p class="chats__copy">I'm active on all social media platforms listed below, but you can also me an email and I will get back to you within 24-48 hours.</p>
+              <a href="#" class="button button--inline-block">Get in touch</a>
+            </div>
+	      </div>
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__item">
-          <a href="index.html" class="page-footer__copyright">Johnathan Specter</a>
-        </div>
-        <div class="page-footer__item">
-          <a href="https://twitter.com/" class="page-footer__link">
-            <img src="images/icons/twitter.svg" alt="Twitter icon" class="page-footer__icon">
-          </a>
-          <a href="https://www.linkedin.com/" class="page-footer__link">
-            <img src="images/icons/linkedin.svg" alt="Linkedin icon" class="page-footer__icon">
-          </a>
-          <a href="https://github.com/" class="page-footer__link">
-            <img src="images/icons/github.svg" alt="Github icon" class="page-footer__icon">
-          </a>
-        </div>
+		<div class="page-footer__wrapper">
+		  <div class="page-footer__item">
+            <img src="images/logo.svg" alt="" class="page-footer__copyright">
+          </div>
+          <div class="page-footer__item">
+            <a href="https://twitter.com/" class="page-footer__link">
+              <img src="images/icons/twitter.svg" alt="Twitter icon" class="page-footer__icon">
+            </a>
+            <a href="https://www.linkedin.com/" class="page-footer__link">
+              <img src="images/icons/linkedin.svg" alt="Linkedin icon" class="page-footer__icon">
+            </a>
+            <a href="https://github.com/" class="page-footer__link">
+              <img src="images/icons/github.svg" alt="Github icon" class="page-footer__icon">
+            </a>
+          </div>
+		</div>
       </footer>
     </div>
     <script src="script.js"></script>
