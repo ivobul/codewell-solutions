@@ -121,6 +121,7 @@ a {
 .page-header__top {
   align-items: center;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1440px;
   position: relative;
@@ -129,17 +130,12 @@ a {
 }
 
 .page-header__logo {
-  flex: 1 0 163px;
+  flex: 0 0 163px;
 }
 
 .site-logo-img {
   display: block;
   margin-top: 5px;
-}
-
-.material-icons {
-  color: #fff;
-  font-size: 2rem;
 }
 
 .page-header__mobile {
@@ -155,8 +151,12 @@ a {
   border: none;
   cursor: pointer;
   display: none;
-  left: 8px;
   position: relative;
+}
+
+.material-icons {
+  color: #fff;
+  font-size: 2rem;
 }
 
 .page-header__nav-link:not(:last-child) {
@@ -187,6 +187,7 @@ a {
   font-family: 'Prata', serif;
   font-weight: 400;
   font-size: 3.5rem;
+  margin-top: 30px;
   max-width: 675px;
   width: 100%;
 }
@@ -350,7 +351,6 @@ a {
   
   .page-header__top {
     gap: 0;
-    justify-content: space-between;
   }
   
   .page-header__mobile {
@@ -359,17 +359,13 @@ a {
     flex: 100%;
     flex-direction: column;
     margin-top: 40px;
+    min-height: 100px;
     padding: 20px 0;
     position: absolute;
     left:0;
     top: 20px;
     width: 100%;
-    min-height: 100px;
     z-index: 100;
-  }
-  
-  .page-header__logo {
-    flex: 0 0 163px;
   }
   
   .site-logo-img {
@@ -411,7 +407,6 @@ a {
   }
 
   .page-header__mobile-icon {
-    cursor: pointer;
     display: block;
   }
 
