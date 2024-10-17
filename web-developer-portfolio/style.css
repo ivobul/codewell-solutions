@@ -322,7 +322,7 @@ a {
 .page-footer {
   align-items: center;
   background-color: #2e3038;
-  padding: 25px 80px;
+  padding: 30px 80px;
 }
 
 .page-footer__wrapper {
@@ -462,7 +462,7 @@ a {
   }
   
   .page-footer {
-    padding: 20px 40px;
+    padding: 30px 40px;
   }
 }
 
@@ -499,16 +499,14 @@ a {
   }
 
   .page-footer {
-    justify-content: center;
-    padding: 20px;
+    padding: 30px 20px;
   }
   
   .page-footer__item {
     flex: 100%;
-    text-align: center;
   }
   
   .page-footer__item:last-child {
-    margin-top: 15px;
+    margin-top: 5px;
   }
 }
