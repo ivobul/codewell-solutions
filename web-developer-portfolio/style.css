@@ -100,12 +100,12 @@ a {
 }
 
 .button:visited {
-  color: #000 !important;
+  color: #000;
 }
 
 .button:hover {
-  background-color: #fcef82 !important;
-  color: #000 !important;
+  background-color: #c8b418;
+  color: #000;
 }
 
 .button--inline-block {
