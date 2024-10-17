@@ -1,5 +1,4 @@
 const mobileIconElem = document.querySelector(".page-header__mobile-icon")
-//const materialIconElem = document.querySelector(".material-icons")
 const mobileNavElem = document.querySelector(".page-header__mobile")
 
 mobileIconElem.addEventListener("click", () => {
