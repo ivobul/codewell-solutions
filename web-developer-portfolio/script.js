@@ -1,14 +1,14 @@
-const hamburger = document.querySelector(".page-header__hamburger");
-const hamburgerIcon = hamburger.querySelector(".material-icons");
-const nav = document.querySelector(".page-header__mobile");
+const mobileIconElem = document.querySelector(".page-header__mobile-icon")
+const materialIconElem = mobileIconElem.querySelector(".material-icons")
+const mobileNavElem = document.querySelector(".page-header__mobile")
 
-hamburger.addEventListener("click", () => {
-  if (hamburgerIcon.innerText === "menu") {
-    hamburgerIcon.innerText = "close";
+mobileIconElem.addEventListener("click", () => {
+  if (materialIconElem.innerText === "menu") {
+    materialIconElem.innerText = "close"
   }
   else {
-    hamburgerIcon.innerText = "menu";
+    materialIconElem.innerText = "menu"
   }
   
-  nav.classList.toggle("active");
-});
+  mobileNavElem.classList.toggle("active")
+})
