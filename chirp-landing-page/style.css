@@ -176,14 +176,14 @@ a {
   border: none;
   cursor: pointer;
   display: none;
-  height: 32px;
+  height: 24px;
   outline: none;
-  width: 32px;
+  width: 24px;
 }
 
 .material-icons {
   color: #000;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .main-nav__list {
