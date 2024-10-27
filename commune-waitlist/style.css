@@ -246,8 +246,6 @@ a {
 
 .just-validate-error-label {
   flex: 100%;
-  margin-top: 15px;
-  margin-left: 5px;
   order: 3;
 }
 
@@ -348,10 +346,6 @@ a {
     margin: 30px auto 0;
   }
   
-  .just-validate-error-label {
-    text-align: left;
-  }
-  
   .page-main__item:last-child {
     display: none;
   }
@@ -390,11 +384,5 @@ a {
   .page-main__form-submit {
     flex-basis: 100%;
     order: 3;
-  }
-  
-  .just-validate-error-label {
-    margin-bottom: 20px;
-    margin-top: 0;
-    order: 2;
   }
 }
