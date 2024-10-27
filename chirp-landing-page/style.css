@@ -105,7 +105,8 @@ a {
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  padding: 14px 30px;
+  height: 58px;
+  padding: 18px 24px;
   text-align: center;
   transition: background-color .3s;
 }
@@ -163,7 +164,13 @@ a {
   width: 100%;
 }
 
-.page-header__hamburger {
+.page-header__logo {
+  display: block;
+  height: 24px;
+  width: 60px;
+}
+
+.page-header__mobile-icon {
   appearance: none;
   background: none;
   border: none;
@@ -464,6 +471,11 @@ a {
   width: 100%;
 }
 
+.page-footer__logo {
+  height: 24px;
+  width: 60px;
+}
+
 .page-footer__nav {
   align-items: center;
   display: flex;
@@ -540,7 +552,7 @@ a {
     flex-wrap: wrap;
   }
   
-  .page-header__hamburger {
+  .page-header__mobile-icon {
     display: block;
   }
   
