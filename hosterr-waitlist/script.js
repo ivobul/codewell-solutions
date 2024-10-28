@@ -6,13 +6,11 @@ const closeIconElem = document.querySelector(".mobile-nav__close-icon")
 hamburgerIconElem.addEventListener("click", () => {
   mobileNavElem.classList.add("active")
   overlayElem.style.display = "block"
-  mobileNavElem.style.transition = "right .5s"
 })
 
 closeIconElem.addEventListener("click", () => {
   mobileNavElem.classList.remove("active")
   overlayElem.style.display = "none"
-  mobileNavElem.style.transition = "right 1s"
 })
 
 overlayElem.addEventListener("click", () => {
