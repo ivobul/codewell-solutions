@@ -213,8 +213,8 @@ html {
   color: #ffffff;
   font-size: .75rem;
   font-weight: 700;
-  margin-bottom: 4px;
-  padding: 6px 12px;
+  height: 24px;
+  padding: 2px 12px;
 }
 
 /* Page header right part */
@@ -459,8 +459,8 @@ html {
   }
   
   .material-icons {
-	color: #000;
-	font-size: 2rem;
+    color: #000;
+    font-size: 1.5rem;
   }
   
   .page-header__nav,
