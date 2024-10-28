@@ -386,16 +386,26 @@ html {
     padding: 0 40px;
   }
   
-  /* Mobile nav section */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    left: 0;
+    min-height: 100vh;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+  }
+  
   .mobile-nav {
     background-color: #fff;
     display: block;
-    left: 2500px;
+    right: -2000px;
     min-height: 100vh;
     padding: 40px 0;
     position: fixed;
     top: 0;
-    width: 100vw;
+    max-width: 430px;
     z-index: 100;
   }
   
@@ -501,7 +511,7 @@ html {
   }
   
   .active {
-    left: 0;
+    right: 0;
   }
 }
 

@@ -1,15 +1,23 @@
 const hamburgerIconElem = document.querySelector(".page-header__hamburger-icon")
 const mobileNavElem = document.querySelector(".mobile-nav")
+const overlayElem = document.querySelector(".overlay")
 const closeIconElem = document.querySelector(".mobile-nav__close-icon")
 
 hamburgerIconElem.addEventListener("click", () => {
   mobileNavElem.classList.add("active")
-  mobileNavElem.style.transition = "left .5s"
+  overlayElem.style.display = "block"
+  mobileNavElem.style.transition = "right .5s"
 })
 
 closeIconElem.addEventListener("click", () => {
   mobileNavElem.classList.remove("active")
-  mobileNavElem.style.transition = "left 1s"
+  overlayElem.style.display = "none"
+  mobileNavElem.style.transition = "right 1s"
+})
+
+overlayElem.addEventListener("click", () => {
+  overlayElem.style.display = "none"
+  mobileNavElem.classList.remove("active")
 })
 
 // Form Validation
