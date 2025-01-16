@@ -328,8 +328,16 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .page {
+    font-size: 1rem;
+  }
+  
   .page-header {
     padding: 40px 25px 0;
+  }
+  
+  .page-header__title {
+    font-size: 2rem;
   }
   
   .page-header__hamburger {
@@ -388,6 +396,10 @@ a {
   
   .page-main {
     padding: 80px 25px 40px;
+  }
+  
+  .page-main__title {
+    font-size: 1.5rem;
   }
   
   .page-footer {
