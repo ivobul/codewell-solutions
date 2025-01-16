@@ -31,3 +31,8 @@ This challenge is best coupled with Day 22 of Wes Bos's [Javascript30](https://j
 ### Fonts Used
 
 https://fonts.google.com/specimen/Inter
+
+
+### Mobile Navigation Interaction (New)
+
+Using [Google Material Icons](https://fonts.google.com/icons) and JavaScript
