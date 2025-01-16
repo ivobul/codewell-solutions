@@ -32,3 +32,7 @@ https://fonts.google.com/specimen/Playfair+Display
 ### Form Validation (New)
 
 Added [JustValidate](https://just-validate.dev/) - a modern form validation library
+
+### Mobile Navigation Interaction (New)
+
+Using [Google Material Icons](https://fonts.google.com/icons) and JavaScript
