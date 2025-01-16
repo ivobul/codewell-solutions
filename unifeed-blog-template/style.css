@@ -116,6 +116,10 @@ a {
   margin-right: 20px;
 }
 
+.main-nav__link {
+  transition: color .3s;
+}
+
 .main-nav__link:visited {
   color: #3d525a;
 }
@@ -286,7 +290,7 @@ a {
 
 @media (max-width: 767px) {
   .main-nav {
-    background-color: #d7f5f5;
+    background-color: #c1dcdc;
     border-radius: 5px;
     display: none;
     flex: 100%;
