@@ -176,9 +176,9 @@ a {
   border: none;
   cursor: pointer;
   display: none;
-  height: 24px;
+  height: 32px;
   outline: none;
-  width: 24px;
+  width: 32px;
 }
 
 .material-icons {
