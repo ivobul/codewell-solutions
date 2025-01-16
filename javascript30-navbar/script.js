@@ -8,6 +8,14 @@ const navLink1 = document.querySelector("#main-nav-link-1")
 mobileMenu.addEventListener("click", () => {
   mainNavElem.classList.toggle("active-display-flex")
   secondaryNavElem.classList.toggle("active-display-flex")
+  
+  if (mobileMenu.innerText === "menu") {
+    mobileMenu.innerText = "close"
+  }
+  
+  else {
+    mobileMenu.innerText = "menu"
+  }
 })
 
 closeIcon.addEventListener("click", () => {
