@@ -126,7 +126,7 @@ a {
 
 .material-icons {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .page-header__nav {
@@ -390,7 +390,7 @@ a {
   
   .page-header__nav {
     align-items: center;
-    background-color: #c6c4e1;
+    background-color: #D1CFE7;
     border-radius: 5px;
     display: none;
     flex: 100%;
