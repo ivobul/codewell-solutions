@@ -22,6 +22,12 @@ overlayElem.addEventListener("click", () => {
   rootElem.style.overflowY = "auto"
 })
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 992) {
+    rootElem.style.overflowY = "auto"
+  }
+})
+
 // Form Validation
 const validator = new JustValidate(".page-main__form", {
   tooltip: {
