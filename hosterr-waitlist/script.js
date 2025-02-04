@@ -23,7 +23,7 @@ overlayElem.addEventListener("click", () => {
 })
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 992) {
+  if (window.innerWidth >= 1081) {
     rootElem.style.overflowY = "auto"
   }
 })
