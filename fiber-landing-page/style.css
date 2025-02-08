@@ -152,6 +152,10 @@ a:visited {
   color: var(--black-color);
 }
 
+.page-header__site-logo-link:hover {
+  color: var(--black-color);
+}
+
 .page-header__mobile-menu {
   display: none;
 }
