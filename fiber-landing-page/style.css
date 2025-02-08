@@ -560,6 +560,10 @@ a:visited {
   color: var(--black-color);
 }
 
+.signup__header-logo-link:hover {
+  color: var(--black-color);
+}
+
 /* Sign up page left main section */
 .signup__main {
   margin: 0 auto;
@@ -796,6 +800,10 @@ a:visited {
   }
 
   .mobile-nav__logo:visited {
+    color: var(--black-color);
+  }
+
+  .mobile-nav__logo:hover {
     color: var(--black-color);
   }
   
