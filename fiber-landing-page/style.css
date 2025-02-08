@@ -148,6 +148,10 @@ a:visited {
   font-weight: bold;
 }
 
+.page-header__site-logo-link:visited {
+  color: var(--black-color);
+}
+
 .page-header__mobile-menu {
   display: none;
 }
@@ -548,6 +552,10 @@ a:visited {
   font-weight: bold;
 }
 
+.signup__header-logo-link:visited {
+  color: var(--black-color);
+}
+
 /* Sign up page left main section */
 .signup__main {
   margin: 0 auto;
@@ -781,6 +789,10 @@ a:visited {
     color: var(--black-color);
     font-weight: bold;
     font-size: 1.25rem;
+  }
+
+  .mobile-nav__logo:visited {
+    color: var(--black-color);
   }
   
   .mobile-nav__close-icon {
