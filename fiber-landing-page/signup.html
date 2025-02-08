@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber | Sign up</title>
+    
+    <!-- JustValidate - Modern form validation library -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <div class="signup">
+      <div class="signup__left">
+        <header class="signup__header">
+          <a href="index.html" class="signup__header-logo-link">Fiber</a>
+        </header><!-- Signup header -->
+        
+        <main class="signup__main">
+          <h1 class="signup__main-title">Create your Fiber account</h1>
+          <form class="signup__main-form">
+            <div class="signup__main-form-item">
+              <label for="usr-name" class="signup__main-form-label">Your Name</label>
+              <input type="text" id="usr-name" class="signup__main-form-inp" name="usr-name" placeholder="John Doe">
+            </div><!-- Signup main form item -->
+
+            <div class="signup__main-form-item">
+              <label for="usr-email" class="signup__main-form-label">E-mail</label>
+              <input type="email" id="usr-email" class="signup__main-form-inp" name="usr-email" placeholder="john@example.com">
+            </div><!-- Signup main form item -->
+
+            <div class="signup__main-form-item">
+              <label for="usr-password" class="signup__main-form-label">Password</label>
+              <input type="password" id="usr-password" class="signup__main-form-inp" name="usr-password" placeholder="At least 8 characters">
+              <span class="material-symbols-outlined show-hide-password" title="Show the password">visibility</span>
+            </div><!-- Signup main form item -->
+            
+            <div class="signup__main-form-item">
+              <label for="checkbox" class="signup__main-form-label sr-only">Check the box</label>
+              <input type="checkbox" id="checkbox" class="signup__main-form-checkbox" name="checkbox" required>
+              <span class="checkbox-text">By creating an account on Fiber, you agree to the <a href="#" class="checkbox-link">Terms &amp; Conditions</a>.</span>
+            </div><!-- Signup main form item -->
+            
+            <div class="signup__main-form-item">
+              <input type="submit" class="signup__main-form-submit" value="Create Fiber Account">
+              <p class="signup__main-form-text">Already have an account? <a href="#" class="signup__main-form-link">Sign in</a></p>
+            </div><!-- Signup main form item -->
+          </form><!-- Signup main form -->
+        </main><!-- Signup main -->
+      </div><!-- Signup left -->
+      
+      <div class="signup__right">
+        <div class="signup__right-box">
+          <div class="signup__right-box-item">
+            <img src="Assets/SignUp-Image.png" alt="A web page" class="signup__right-image">
+            <h2 class="signup__right-title">Unparalleled Templates</h2>
+            <p class="signup__right-copy">Crafted by a team of professional designers, our templates are eunparalleled in the market.</p>
+          </div><!-- Signup right box item -->
+          
+          <div class="signup__right-box-item">
+            <img src="Assets/templates-2.jpg" alt="A laptop, a desk, a chair, a room" class="signup__right-image">
+            <h2 class="signup__right-title">Unparalleled Templates 2</h2>
+            <p class="signup__right-copy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
+          </div><!-- Signup right box item -->
+          
+          <div class="signup__right-box-item">
+            <img src="Assets/templates-3.jpg" alt="A web page layout" class="signup__right-image">
+            <h2 class="signup__right-title">Unparalleled Templates 3</h2>
+            <p class="signup__right-copy">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem massa quis enim.</p>
+          </div><!-- Signup right box item -->
+          
+          <div class="signup__right-box-item">
+            <img src="Assets/templates-4.jpg" alt="Laptops, mobile devices, a desk" class="signup__right-image">
+            <h2 class="signup__right-title">Unparalleled Templates 4</h2>
+            <p class="signup__right-copy">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </div><!-- Signup right box item -->
+      
+          <div class="signup__right-indicators">
+            <div class="signup__right-indicator"></div>
+            <div class="signup__right-indicator"></div>
+            <div class="signup__right-indicator"></div>
+            <div class="signup__right-indicator"></div>
+          </div><!-- Signup right indicators -->
+        </div><!-- Signup right box -->
+      </div><!-- Signup right -->
+    </div><!-- Signup page -->
+    
+    <!-- JustValidate - Modern form validation library -->
+    <script>
+      const validator = new JustValidate(".signup__main-form")
+
+      validator
+        .addField("#usr-name", [
+          {
+            rule: "required",
+          },
+        ])
+        .addField("#usr-email", [
+          {
+            rule: "required",
+          },
+          {
+            rule: "email",
+          },
+        ])
+        .addField("#usr-password", [
+          {
+            rule: "required",
+          },
+          {
+            rule: "strongPassword",
+          },
+        ])
+        .addField("#checkbox", [
+          {
+            rule: "required",
+          },
+        ])
+        .onSuccess(() => {
+          document.querySelector(".signup__main-form").submit();
+        })
+    </script>
+    
+    <script src="signup.js"></script>
+  </body>
+</html>
