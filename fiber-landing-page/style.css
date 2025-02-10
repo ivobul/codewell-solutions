@@ -621,14 +621,13 @@ a:visited {
 }
 
 .signup__main-form-checkbox {
-  height: 18px;
-  position: relative;
-  top: 1px;
-  width: 18px;
+  height: 17px;
+  width: 17px;
 }
 
-.checkbox-text {
-  color: var(--black-color);
+.signup__main-form-checkbox + .signup__main-form-label {
+  display: inline;
+  font-weight: 400;
 }
 
 .checkbox-link {
