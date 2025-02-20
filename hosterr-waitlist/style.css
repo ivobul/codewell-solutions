@@ -400,13 +400,14 @@ html {
   .mobile-nav {
     background-color: #fff;
     display: block;
-    right: -2000px;
     height: 100%;
+    max-width: 430px;
     overflow-y: scroll;
     padding: 40px 0;
     position: fixed;
+    right: -2000px;
     top: 0;
-    max-width: 430px;
+    width: 100%;
     z-index: 100;
   }
   
