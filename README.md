@@ -12,6 +12,7 @@
 - [Newsletter Popup Template](https://ivobul.github.io/codewell-solutions/newsletter-popup-template/)
 - [Snipper Landing Page](https://ivobul.github.io/codewell-solutions/snipper-landing-page/)
 - [Spense Landing Page](https://ivobul.github.io/codewell-solutions/spense-landing-page/)
-- [Subway Multistep Form Template](https://ivobul.github.io/codewell-solutions/subway-multistep-form-template)
+- [Subway Multistep Form Template](https://ivobul.github.io/codewell-solutions/subway-multistep-form-template/)
+- [TimeNow Template](https://ivobul.github.io/codewell-solutions/time-now-template/)
 - [Unifeed Blog Template](https://ivobul.github.io/codewell-solutions/unifeed-blog-template/)
 - [Web Developer Portfolio](https://ivobul.github.io/codewell-solutions/web-developer-portfolio/)
