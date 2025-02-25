@@ -1,0 +1,590 @@
+/* CSS Reset - A more modern and concise version 
+* Many thanks to: 
+* Josh Comeau - https://www.joshwcomeau.com/css/custom-css-reset/
+* Kevin Powell - https://youtu.be/eWmDW4zEXt4?si=S94B0BbGfmo5VZsq/
+* Andy Bell - https://piccalil.li/blog/a-more-modern-css-reset/
+* Ire Aderinokun - https://bitsofco.de/my-css-reset-base/
+*/
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body defaults rules */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Typography tweaks */
+/* Remove built-in form typography styles */
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+/* Typography tweaks */
+/* Avoid text overflows */
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Typography tweaks */
+/* Balance the number of words*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Reset specific element styles */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Basic styles */
+:root {
+  --btn-color: #FFFFFF;
+  --btn-bgcolor: #1D1B67;
+  --body-copy-color: #425466;
+  --link-hover-color: #242e38;
+  --pseudo-before-color: #212121;
+  --pseudo-after-color: #546575;
+  --title-color: #252525;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.btn {
+  background-color: var(--btn-bgcolor);
+  border-radius: 5px;
+  color: var(--btn-color);
+  font-weight: bold;
+  padding: 18px 24px;
+  text-transform: capitalize;
+  transition: background-color .3s;
+}
+
+.btn:visited {
+  color: var(--btn-color);
+}
+
+.btn:hover {
+  background-color: #3C0FA2;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px; 
+}
+
+.hidden {
+  display: none;
+}
+
+.pricing {
+  background-color: var(--btn-color);
+  color: var(--body-copy-color);
+  font-family: "Inter", serif;
+  font-size: 1.125rem;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Pricing header */
+.pricing-header {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 40px 90px;
+  width: 100%;
+}
+
+.pricing-header__logo-link {
+  margin-right: 40px;
+}
+
+.pricing-header__mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.pricing-header__nav-link {
+  color: var(--body-copy-color);
+  transition: color .3s;
+}
+
+.pricing-header__nav-link:visited {
+  color: var(--body-copy-color);
+}
+
+.pricing-header__nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+.pricing-header__nav-link.current {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.pricing-header__nav-link:first-child {
+  margin-right: 20px;
+}
+
+.pricing-header__cta-link {
+  margin-left: auto;
+}
+
+/* Pricing main */
+.pricing-main {
+  flex: 1;
+}
+
+/* Pricing main plans */
+.pricing-main__plans {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 40px 90px;
+}
+
+.pricing-main__plans-title {
+  color: var(--title-color);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.pricing-main__plans-copy {
+  margin: 15px auto 0;
+  max-width: 720px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Pricing main plans toggle switch */
+.pricing-main__plans-toggle-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pricing-main__plans-toggle-body {
+  align-items: center;
+  background-color: #3A84F7;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  padding: 5px;
+  position: relative;
+  transition: all .5s ease;
+  width: 60px;
+}
+
+.pricing-main__plans-toggle-body::before {
+  color: var(--pseudo-before-color);
+  content: "Billed Monthly";
+  position: absolute;
+  right: 90px;
+  width: max-content;
+}
+
+.pricing-main__plans-toggle-body::after {
+  color: var(--pseudo-after-color);
+  content: "Billed Yearly";
+  left: 90px;
+  position: absolute;
+  width: max-content;
+}
+
+.inner-circle {
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  transition: all .5s ease;
+  width: 20px;
+}
+
+.inner-circle--start {
+  left: 5px;
+}
+
+.inner-circle--end {
+  left: 35px;
+}
+
+/* Pricing main plans box items */
+.pricing-main__plans-box {
+  align-items: flex-start;
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.pricing-main__plans-box-item {
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+  padding: 25px 35px;
+  flex: 1;
+}
+
+.pricing-main__plans-box-title {
+  color: var(--title-color);
+  font-size: 2.25rem;
+}
+
+.pricing-main__plans-box-title--alternative {
+  color: #878787;
+  font-size: 1.25rem;
+}
+
+.pricing-main__plans-box-copy {
+  border-bottom: 1px solid #CDCDCD;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.pricing-main__plans-box-list {
+  margin-top: 25px;
+}
+
+.pricing-main__plans-box-list-item {
+  display: flex;
+  gap: 15px;
+}
+
+.pricing-main__plans-box-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.pricing-main__plans-box-link {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* Pricing footer */
+.pricing-footer {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 40px 90px;
+}
+
+.pricing-footer__main {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.pricing-footer__main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-footer__main-nav-title,
+.pricing-footer__main-form-label {
+  color: var(--title-color);
+  font-size: 1.25rem;
+}
+
+.pricing-footer__main-nav-title {
+  margin-bottom: 8px;
+}
+
+.pricing-footer__main-form-label {
+  display: block;
+  font-weight: bold;
+  width: max-content;
+}
+
+.pricing-footer__main-nav-link {
+  color: var(--body-copy-color);
+  transition: color .3s;
+}
+
+.pricing-footer__main-nav-link:visited {
+  color: var(--body-copy-color);
+}
+
+.pricing-footer__main-nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+.pricing-footer__main-nav-link:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* Pricing footer main form */
+.pricing-footer__main-form {
+  flex-basis: 432px;
+}
+
+.pricing-footer__main-form-input-box {
+  max-width: 432px;
+  position: relative;
+  width: 100%;
+}
+
+.pricing-footer__main-form-input {
+  border: 1px solid #A8A8A8;
+  border-radius: 5px;
+  margin-top: 8px;
+  max-width: 432px;
+  padding: 20px 205px 20px 12px;
+  width: 100%;
+}
+
+.pricing-footer__main-form-submit {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 3px;
+  top: 11px;
+}
+
+@media (max-width: 1068px) {
+  .pricing-header,
+  .pricing-main__plans {
+    padding: 40px 60px;
+  }
+
+  .pricing-main__plans-title {
+    font-size: 2.5rem;
+  }
+
+  .pricing-main__plans-box {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .pricing-main__plans-box-item:first-child .pricing-main__plans-box-link {
+    margin-top: 60px;
+  }
+  
+  .pricing-main__plans-box-item:last-child {
+    flex: 100%;
+  }
+  
+  .pricing-footer {
+    padding: 40px 60px;
+  }
+  
+  .pricing-footer__main {
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: flex-start;
+  }
+  
+  .pricing-footer__main-form {
+    flex: 100%;
+    margin-top: 35px;
+  }
+  
+  .pricing-footer__main-nav:not(:nth-child(3)) {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .mobile-nav {
+    background-color: var(--btn-color);
+    display: block;
+    height: 100%;
+    max-width: 430px;
+    overflow-y: scroll;
+    padding: 40px 0;
+    position: fixed;
+    right: -2999px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .mobile-nav__top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  
+  .mobile-nav__close-icon {
+    cursor: pointer;
+  }
+  
+  .mobile-nav__main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .mobile-nav__main-link {
+    align-items: center;
+    color: var(--body-copy-color);
+    display: flex;
+    flex: 100%;
+    height: 63px;
+    padding: 0 25px;
+    transition: background-color .3s;
+  }
+  
+  .mobile-nav__main-link:visited {
+    color: var(--body-copy-color);
+  }
+  
+  .mobile-nav__main-link:hover {
+    background-color: #F0F0F0;
+  }
+
+  .mobile-nav__bottom {
+    display: flex;
+  }
+  
+  .mobile-nav__bottom-link {
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    margin: 30px 25px 0;
+  }
+  
+  .active {
+    right: 0;
+  }
+  
+  .pricing-header {
+    justify-content: space-between;
+    padding: 40px 25px;
+  }
+  
+  .pricing-header__logo-link {
+    margin-right: 0;
+  }
+  
+  .pricing-header__mobile-menu {
+    display: block;
+  }
+
+  .pricing-header__nav {
+    display: none;
+  }
+
+  .pricing-header__cta-link {
+    display: none
+  }
+  
+  .pricing-main__plans {
+    padding: 40px 25px;
+  }
+  
+  .pricing-main__plans-box-item {
+    flex: 100%;
+  }
+  
+  .pricing-main__plans-box-item:first-child .pricing-main__plans-box-link {
+    margin-top: 25px;
+  }
+  
+  .pricing-footer {
+    padding: 40px 25px;
+  }
+  
+  .pricing-footer__main-nav {
+    margin-bottom: 20px;
+  }
+  
+  .pricing-footer__main-form {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing-main__plans-toggle-body::before {
+    font-size: 1rem;
+    right: 75px;
+  }
+
+  .pricing-main__plans-toggle-body::after {
+    font-size: 1rem;
+    left: 75px;
+  }
+  
+  .pricing-footer__main-form-input {
+    padding: 17px 12px;
+  }
+
+  .pricing-footer__main-form-submit {
+    margin-top: 12px;
+    position: revert;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
